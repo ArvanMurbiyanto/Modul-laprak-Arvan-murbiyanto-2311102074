@@ -1,5 +1,5 @@
-//Nama : arnanda setya nosa putra
-// NIM : 2311102180
+//Nama : arvan murbiyanto
+// NIM : 2311102074
 
 #include <iostream>
 #include <string>
