@@ -1,7 +1,7 @@
 # <h1 align="center">Laporan Praktikum Modul 3 Linked List </h1>
-<p align="center">Arnanda setya nosa putra</p>
-<p align="center">231102180</p>
-<p align="center">IF 11 E</p>
+<p align="center">Arvan Murbiyanto</p>
+<p align="center">231102074</p>
+<p align="center">IF 11 B</p>
 
 
 ## Dasar Teori
