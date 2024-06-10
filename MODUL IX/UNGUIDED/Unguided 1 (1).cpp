@@ -4,20 +4,20 @@
 using namespace std;
 
 int main() {
-    int jumlahSimpul2311102180;
+    int jumlahSimpul2311102074;
     cout << "Silakan masukkan jumlah simpul: ";
-    cin >> jumlahSimpul2311102180;
+    cin >> jumlahSimpul2311102074;
 
-    string simpul[jumlahSimpul2311102180];
-    int busur[jumlahSimpul2311102180][jumlahSimpul2311102180];
+    string simpul[jumlahSimpul2311102074];
+    int busur[jumlahSimpul2311102180][jumlahSimpul2311102074];
 
-    for (int i = 0; i < jumlahSimpul2311102180; i++) {
+    for (int i = 0; i < jumlahSimpul2311102074; i++) {
         cout << "Simpul " << i + 1 << ": ";
         cin >> simpul[i];
     }
 
-    for (int i = 0; i < jumlahSimpul2311102180; i++) {
-        for (int j = 0; j < jumlahSimpul2311102180; j++) {
+    for (int i = 0; i < jumlahSimpul2311102074; i++) {
+        for (int j = 0; j < jumlahSimpul2311102074; j++) {
             cout << "Silakan masukkan bobot antara simpul " << simpul[i] << " dan " << simpul[j] << ": ";
             cin >> busur[i][j];
         }
@@ -25,14 +25,14 @@ int main() {
 
     cout << "\nGraf yang dihasilkan:\n";
     cout << setw(15) << " ";
-    for (int i = 0; i < jumlahSimpul2311102180; i++) {
+    for (int i = 0; i < jumlahSimpul2311102074; i++) {
         cout << setw(15) << simpul[i];
     }
     cout << endl;
 
-    for (int i = 0; i < jumlahSimpul2311102180; i++) {
+    for (int i = 0; i < jumlahSimpul2311102074; i++) {
         cout << setw(15) << simpul[i];
-        for (int j = 0; j < jumlahSimpul2311102180; j++) {
+        for (int j = 0; j < jumlahSimpul2311102074; j++) {
             cout << setw(15) << busur[i][j];
         }
         cout << endl;
