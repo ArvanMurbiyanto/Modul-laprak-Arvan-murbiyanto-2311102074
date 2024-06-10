@@ -8,15 +8,15 @@ struct Pohon {
 };
 
 // Pointer global
-Pohon *root2311102180;
+Pohon *root2311102074;
 
 // Inisialisasi
 void init() {
-    root2311102180 = NULL;
+    root2311102074 = NULL;
 }
 
 bool isEmpty() {
-    return root2311102180 == NULL;
+    return root2311102074 == NULL;
 }
 
 Pohon *newPohon(char data) {
@@ -30,7 +30,7 @@ Pohon *newPohon(char data) {
 
 void buatNode(char data) {
     if (isEmpty()) {
-        root2311102180 = newPohon(data);
+        root2311102074 = newPohon(data);
         cout << "\nNode " << data << " berhasil dibuat menjadi root." << endl;
     } else {
         cout << "\nPohon sudah dibuat" << endl;
@@ -107,7 +107,7 @@ void find(Pohon *node) {
             cout << "\nNode yang ditunjuk tidak ada!" << endl;
         else {
             cout << "\nData Node : " << node->data << endl;
-            cout << "Root : " << root2311102180->data << endl;
+            cout << "Root : " << root2311102074->data << endl;
 
             if (!node->parent)
                 cout << "Parent : (tidak memiliki parent)" << endl;
@@ -180,7 +180,7 @@ void deleteTree(Pohon *node) {
         cout << "\nBuat tree terlebih dahulu!" << endl;
     else {
         if (node != NULL) {
-            if (node != root2311102180) {
+            if (node != root2311102074) {
                 if (node->parent->left == node)
                     node->parent->left = NULL;
                 else if (node->parent->right == node)
@@ -189,9 +189,9 @@ void deleteTree(Pohon *node) {
             deleteTree(node->left);
             deleteTree(node->right);
 
-            if (node == root2311102180) {
-                delete root2311102180;
-                root2311102180 = NULL;
+            if (node == root2311102074) {
+                delete root2311102074;
+                root2311102074 = NULL;
             } else {
                 delete node;
             }
@@ -215,7 +215,7 @@ void clear() {
     if (isEmpty())
         cout << "\nBuat tree terlebih dahulu!" << endl;
     else {
-            deleteTree(root2311102180);
+            deleteTree(root2311102074);
     cout << "\nPohon berhasil dihapus." << endl;
     }
 }
@@ -256,8 +256,8 @@ int height(Pohon *node) {
 
 // Karakteristik Tree
 void characteristic() {
-    int s = size(root2311102180);
-    int h = height(root2311102180);
+    int s = size(root2311102074);
+    int h = height(root2311102074);
     cout << "\nSize Tree : " << s << endl;
     cout << "Height Tree : " << h << endl;
     if (h != 0)
@@ -315,8 +315,8 @@ int main() {
 
     Pohon *nodeB, *nodeC, *nodeD, *nodeE, *nodeF, *nodeG, *nodeH, *nodeI, *nodeJ;
 
-    nodeB = insertLeft('B', root2311102180);
-    nodeC = insertRight('C', root2311102180);
+    nodeB = insertLeft('B', root2311102074);
+    nodeC = insertRight('C', root2311102074);
     nodeD = insertLeft('D', nodeB);
     nodeE = insertRight('E', nodeB);
     nodeF = insertLeft('F', nodeC);
@@ -330,20 +330,20 @@ int main() {
     retrieve(nodeC);
     find(nodeC);
     cout << "\nPreOrder :" << endl;
-    preOrder(root2311102180);
+    preOrder(root2311102074);
     cout << "\n" << endl;
     cout << "InOrder :" << endl;
-    inOrder(root2311102180);
+    inOrder(root2311102074);
     cout << "\n" << endl;
     cout << "PostOrder :" << endl;
-    postOrder(root2311102180);
+    postOrder(root2311102074);
     cout << "\n" << endl;
     characteristic();
     displayChild(nodeE);
     displayDescendant(nodeB);
     deleteSub(nodeE);
     cout << "\nPreOrder :" << endl;
-    preOrder(root2311102180);
+    preOrder(root2311102074);
     cout << "\n" << endl;
     characteristic();
 }
